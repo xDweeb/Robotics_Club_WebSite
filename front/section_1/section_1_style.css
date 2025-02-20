@@ -1,0 +1,84 @@
+body {
+    background-color: #0b1c2d; 
+    border-bottom-right-radius: 16px;
+   
+}
+.navbar-container {
+    background-color: #0b1c2d; 
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav .nav-link:hover {
+    color: #00a8ff !important; 
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.contact img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.contact h6 {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+.contact p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00a8ff;
+}
+.contact p a:hover {
+    color: #0077cc;
+}
+span{
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: #00a8ff;
+
+}
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.image-track {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    animation: scrollImages 5s linear infinite;
+}
+.image-track img {
+    width: 200px;
+    height: 400px;
+    border: 2px solid #00a8ff;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-left: 13px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes scrollImages {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+#section_uno{
+    background-color: #0b1c2d;
+    border-bottom-right-radius: 80px;
+}
