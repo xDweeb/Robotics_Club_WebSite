@@ -62,7 +62,7 @@
         <div class="container">
             <!-- left text-->
             <div class="row">
-                <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center pt-3">
+                <div class="col-md-6 col-sm-12 d-flex flex-column pt-3">
                     <h5 class="robotics_club_cmc py-2">ROBOTICS CLUB CMC - RABAT</h5>
                     <h1 class="fw-bolder slogan py-2"><span class="first-char-slogan">C</span>rafting <br><span class="first-char-slogan">M</span >odeling <br> <span class="first-char-slogan">C</span>oding</h1>
                     <p class="description_club py-2">
@@ -80,30 +80,47 @@
                     </div>
                 </div>
                   <!-- scrooling pictures-->
-                <div class="col-md-6 col-sm-12 d-flex flex-wrap align-items-center">
-                    <div class="carousel-container d-flex justify-content-center">
-                        <div class="image-track">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 1">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 2">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 3">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 4">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 5">
-                            
-                        </div>
-                        <div class="image-track">
-                       
-                            <img src="/front/section_1/assets/Images.png" alt="Image 6">
-                            <img src="/front/section_1/assets/Image-2.png" alt="Image 7">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 8">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 9">
-                            <img src="/front/section_1/assets/Images.png" alt="Image 10">
-                        </div>
-                </div>
+                <div class="col-md-6 col-sm-12 d-flex flex-wrap some">
+                  <div class="carousel-container">
+                    <div class="image-track">
+                        <img src="/front/section_1/assets/Fun Fact.png" alt="Image 1" class="img1">
+                        <img src="/front/section_1/assets/Icon Box.png" alt="Image 2"class="img3" >
+                        <img src="/front/section_1/assets/Images.png" alt="Image 3" class="img2">
+                        <img src="/front/section_1/assets/Rating.png" alt="Image 4" class="img8">
+                        <img src="/front/section_1/assets/Slide_Image.png" alt="Image 5" class="img5">
+                    </div>
+                    <div class="image-track">
+                        <img src="/front/section_1/assets/Slide_Image.png" alt="Image 6" class="img3">
+                        <img src="/front/section_1/assets/Fun Fact.png" alt="Image 7" class="img4">
+                        <img src="/front/section_1/assets/Images.png" alt="Image 8" class="img8">
+                        <img src="/front/section_1/assets/Icon Box.png" alt="Image 9"class="img9">
+                        <img src="/front/section_1/assets/Rating.png" alt="Image 10" class="img2">
+                        
+                    </div>
+                  </div>   
             </div>
         </div>
 
     </section>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    function duplicateImages(track) {
+        let images = Array.from(track.children);
+        
+        // Clone images to make scrolling seamless
+        images.forEach(img => {
+            let clone = img.cloneNode(true);
+            track.appendChild(clone);
+        });
+    }
 
+    let tracks = document.querySelectorAll(".image-track");
+    tracks.forEach(track => {
+        duplicateImages(track);
+    });
+});
+
+   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
