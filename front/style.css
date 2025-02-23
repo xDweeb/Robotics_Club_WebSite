@@ -1,0 +1,61 @@
+:root {
+  --primary:#2B9CB8;
+  --background:#071731;
+  --w:#fff;
+  --b:#000;
+}
+
+body {
+  padding: 18px;
+  color: var(--w);
+  background-color: var(--background);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+.container .left {
+  position: relative;
+  padding: 8px;
+  width: 50%;
+}
+.container .left h6 {
+  font-Weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--primary);
+}
+.container .left h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 78.4px;
+}
+.container .left .p1 {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 32px;
+}
+.container .left ul {
+  list-style: none;
+}
+.container .left hr {
+  color: var(--w);
+}
+.container .left .p2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33.6px;
+}
+.container .left button {
+  background-color: var(--primary);
+  border-radius: 8px;
+  border: none;
+  padding: 9px;
+  color: var(--w);
+}
+
+/*# sourceMappingURL=style.css.map */
