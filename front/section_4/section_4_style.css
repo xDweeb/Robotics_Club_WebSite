@@ -7,7 +7,7 @@ body{
     height: 838px;
     top: 2654px;
 }
-h1{
+.titre{
    color: #FFFFFF;
    font-family: Rubik;
    font-weight: 600;
@@ -23,7 +23,7 @@ p{
     margin-top: 30px;
 
 }
-img{
+.div1 img{
     border: #FFFFFF 2px;
     width: 238.23px;
     height: 244.06px;
