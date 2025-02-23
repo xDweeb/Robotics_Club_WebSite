@@ -476,6 +476,8 @@ footer {
 
 .footer-links li {
   margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif, Times, serif;
+  font-size: 17px;
 }
 
 .footer-links a {
@@ -513,118 +515,3 @@ a{
 .footer-bottom a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* <div class="container">
-<div class="row global">
-    <div class="col-md-6">
-        <div class="left">
-            <h6>WHY CHOOSING US</h6>
-            <h2 class="title3">Why Robotics CmC is  the Perfect Choice</h2>
-            <p class="p1">The Robotics CmC Rabat fosters innovation, skills, and <br> collaboration in robotics</p>
-            <ul>
-                <li><img src="/front/assets/arrow-right-circle.png" alt="">Hands-on Learning</li>
-                <li><img src="/front/assets/arrow-right-circle.png" alt="">Innovative Workshops</li>
-                <li><img src="/front/assets/arrow-right-circle.png" alt="">Exciting Competitions</li>
-                <li><img src="/front/assets/arrow-right-circle.png" alt="">Career Growth</li>
-            </ul>
-            <hr>
-            <p class="p2">join us and shape the futur of robotics!</p>
-            <button>Explore now <img src="" alt=""></button>
-        </div>
-
-    </div>
-    <div class="col-md-6 pic">
-        <img src="/front/assets/back.png" alt="" class="img-fluid">
-    </div>
-</div>
-
-
-:root {
-  --primary:#2B9CB8;
-  --background:#071731;
-  --w:#fff;
-  --b:#000;
-}
-#section_3{
-    padding: 18px;
-    color: var(--w);
-    background-color: var(--background);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 100vh;
-
-}
-.global {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-}
-.global .left {
-  position: relative;
-  padding: 8px;
-  width: 50%;
-}
-.global .left h6 {
-  font-Weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color: var(--primary);
-}
-.global .left .title3 {
-  font-family: Rubik;
-  font-weight: 600;
-  font-size: 56px;       
-  list-style: 78.4px;
-}
-.global .left .p1 {
-  font-size: 15px;
-  font-weight: 100;
-  line-height: 32px;
-}
-.global .left ul {
-  list-style: none;
-}
-.global .left hr {
-  color: var(--w);
-}
-.global .left .p2 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33.6px;
-}
-.global .left button {
-  background-color: var(--primary);
-  border-radius: 8px;
-  border: none;
-  padding: 9px;
-  color: var(--w);
-}
-
-</div> */
