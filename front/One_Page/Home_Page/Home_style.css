@@ -5,6 +5,7 @@ body {
   border-top-right-radius: 80%;
   
 }
+/* Wiam */
 #section_1 {
   background-color: #0b1c2d;
   border-bottom-right-radius: 80px;
@@ -181,6 +182,7 @@ border: 5px solid  #2b9cb8 ;
 
 
 }
+/* Yasser */
 #section_2{ 
   background-color: #0b1c2d;
 }
@@ -250,9 +252,10 @@ border: 5px solid  #2b9cb8 ;
     width: 150px;
     height: 100px;
     opacity: 0.8;
-    background-image: url("/front/assets/Patter.svg");
+    background-image: url("/front/One_Page/Home_Page/assets/Patter.svg");
     background-size: cover;
 }
+/* Hamza */
 #section_3{
   border-top-left-radius: 16px;
   background-color: #0b1c2d;
@@ -306,12 +309,12 @@ ul li img{
 }
 .image_3 img{
   position: relative;
-  width: 117%;
+  width: 119.9%;
   
 }
 
 
-
+/* Siham */
 
 #section_4{
     
@@ -359,6 +362,8 @@ p{
   padding: 10px 15px;
   
 }
+/* kawtar */
+
 /* #section_5{
     /* background-color: #f7f8fa ; */
     /* display: flex;
@@ -370,13 +375,13 @@ p{
 
 
 .video-container {
-  background-image:url("/front/assets/BANNIERE CMC RABAT 1.png") ;
+  background-image:url("/front/One_Page/Home_Page/assets/BANNIERE CMC RABAT 1.png") ;
   background-position:center ;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   border-top-left-radius: 80px;
-  border-bottom-right-radius:80px ;
+ 
   position: relative;
  
 }
@@ -421,6 +426,7 @@ p{
   font-size: 20px;
   font-weight: bold;
 }
+/* kawtar's footer */
 footer{
   background-color: #FFFFFF;
 
