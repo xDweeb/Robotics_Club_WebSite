@@ -305,7 +305,8 @@ ul li img{
   margin-right: 5px;
 }
 .image_3 img{
-  width: 120%;
+  position: relative;
+  width: 117%;
   
 }
 

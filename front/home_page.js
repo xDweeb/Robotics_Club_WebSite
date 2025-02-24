@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded",  ()=> {
     function duplicateImages(track) {
         let images = Array.from(track.children);
         
