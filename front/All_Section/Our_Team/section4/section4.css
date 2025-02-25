@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* section4 */
+#section4{
+  background-color: #FFFFFF;
+}
+.title-4{
+color: #2B9CB8 !important;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+}
+.title4{
+  font-family: Rubik;
+color: #000000;
+font-weight: 600;
+font-size: 56px;
+line-height: 78.4px;
+}
+.carousel-item {
+  
+  text-align: center;
+}
+.posi{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 320px;
+ 
+
+}
+.posi .posi1{
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.profile-card {
+
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.posi .posi1 h5{
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.7px;
+    text-align: center;
+    color: #000000;
+}
+.posi .posi1 p{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.96px;
+    text-align: center;
+    color: #9CB8BF;
+}
+.profile-card{
+  height: 90%;
+}
+.posi1 {
+    text-align: center;
+    width: 250px; /* Adjust width if needed */
+    margin: auto;
+}
+
+.image-frame img{
+  width: 200px;
+
+}
+
+/* footer */
+footer{
+    background-color: #FFFFFF;
+  
+  }
+  footer form button{
+    background-color: #2B9CB8;
+    color: #f1f1f1;
+    border-radius: 15px  ;
+    padding: 24px 34px 24px 34px;
+    width: 148px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 50px;
+    border: none;
+  }
+  form input{
+   
+    border: 1px solid #071731;
+    border-radius: 12px;
+    width: 250px;
+    height: 58px;
+  }
+  form input::placeholder{
+    color: #00a8ff;
+    text-align: center;
+  
+  }
+  footer {
+    background: #fff;
+    padding: 50px 0;
+   
+  }
+  
+  .footer-logo img {
+    width: 180px;
+    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+    font-size: 17px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #2b2b2c;
+  }
+  .parag-foot{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #231f20;
+  }
+  
+  
+  .footer-bottom {
+  
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-bottom a {
+    color: #323233;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
