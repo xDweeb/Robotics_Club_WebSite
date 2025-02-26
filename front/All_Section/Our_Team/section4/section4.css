@@ -15,62 +15,31 @@ line-height: 20px;
 color: #000000;
 font-weight: 600;
 font-size: 56px;
-line-height: 78.4px;
+line-height: 90px;
 }
-.carousel-item {
-  
+.profile-card p{
+  Font-family:Rubik;
+  font-weight: 400;
+  font-size :16px;
+ line-height: 20px;
+ text-align: center;
+ color: #9CB8BF;
+}
+.profile-card h5{
+  font-family: Rubik;
+  font-weight:700 ;
+   font-size:  20px;
+  line-height: 70px;
   text-align: center;
 }
-.posi{
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  height: 320px;
- 
 
+.profile-card .rounded-circle{
+  width:250px ;
+  height:150px;
 }
-.posi .posi1{
-  flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+.slide{
+padding: 10px;
 }
-.profile-card {
-
-  justify-content: space-around;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-}
-.posi .posi1 h5{
-    font-family: Rubik;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23.7px;
-    text-align: center;
-    color: #000000;
-}
-.posi .posi1 p{
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18.96px;
-    text-align: center;
-    color: #9CB8BF;
-}
-.profile-card{
-  height: 90%;
-}
-.posi1 {
-    text-align: center;
-    width: 250px; /* Adjust width if needed */
-    margin: auto;
-}
-
-.image-frame img{
-  width: 200px;
-
-}
-
 /* footer */
 footer{
     background-color: #FFFFFF;
