@@ -1,145 +1,86 @@
-body {
-    font-family: sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    overflow-x: hidden; 
-}
-
-.main-container {
-    padding: 40px;
-}
-
-.content-left {
-    padding: 40px;
-    position: relative;
-    z-index: 1;
-}
-
-.content-right {
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.content-right .image-container {
-  position: relative; 
-  overflow: hidden;  
-}
-
-.content-right img {
-    border-radius: 20px;
-    width: 100%;
-    height: 300px;
-    display: block;
-    position: relative;
-    z-index: 4;  
-}
-
-.content-right .image-container::before {
-    content: "";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.image_principale{
     position: absolute;
-    bottom: 0;
-    left: 75px;
-    width: 70%;
-    height: 100px;
-    background-color: #4ad1e6;  
-    border-radius: 50%;
-     
+    bottom: 0px;
+    margin-left: 300px; 
 }
-h1 {
-    font-size: 10px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    line-height: 1.2;
+.p_hello{
+    
+   
+   border: solid;
+   width: 118px;
+   height: 45px;
+   top: 19px;
+   left: 386.84px;
+   border: 1.27px solid #171717;
+   border-radius: 38.24px;
+   padding-top: 12.75px;
+   padding-right: 25.49px;
+   padding-bottom: 12.75px;
+   padding-left: 25.49px;
+   gap: 6.37px;
+   background-color: #FFFFFF;
 }
-.quote-section i {
-    margin-right: 5px;
-    color: #555;
-    font-style: italic;
-    margin-bottom: 30px;
+.row2{
+   font-family: Rubik;
+   font-weight: 600;
+   font-size: 95.75px;
+   line-height: 95.75px;
+   text-align: center;
+   color: #171717;
+   margin-bottom: 10px;
 }
-
-.number-section {
-    font-size: 10em;
-    font-weight: bold;
-    margin-bottom: 0;
-    position: relative;
-    color: #000;
+.row1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-.number-section .number-line {
-    position: absolute;
-    bottom: 10px; 
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background-color: #333;
+.parag{
+   font-family: Rubik;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 15px;
+   
 }
-
-.button-group .btn {
-    margin-right: 10px;
-    border-radius: 20px;
-    font-size: 0.9em;
-    font-weight: bold; 
+.color_yasser{
+   color: #2b9cb8;
 }
-
-.social-icons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 2;
-}
-
-.social-icons a {
-    color: #333;
-    font-size: 1.5em;
-    margin-left: 10px;
-}
-
-.social-icons a:hover {
-    color:  #4ad1e6;
-}
-
-.staff-text {
-    position: absolute;
-    bottom: 50px;
-    right: -80px;
-    color: #ddd;
-    font-size: 8em;
-    font-weight: bold;
-    transform: rotate(-90deg);
-    opacity: 0.3;
-    letter-spacing: 10px; 
-}
-.profile-section {
-    padding: 60px 20px;
-    text-align: center;
-    position: relative;
-}
-
-.hello-bubble {
-    display: inline-block;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 8px 15px;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.highlight {
-    color: #4ad1e6;
-}
-
-.cont{
+.Hello{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    position: relative;
-    bottom: 375px;
 }
-
+.trois_image_gauche{
+    position: absolute;
+    left: 40px;
+    top: 320px;
+}
+.position_01{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 113.76px;
+    letter-spacing: -1.5%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    offset: auto;
+    text-decoration-thickness: auto;
+}
+.petit_simbol{
+   position: absolute;
+   right: 650px;
+   top: 0px;
+}
+.position_01{
+  position: relative;
+  top: 100px;
+}
+.row4{
+   margin-top: 100px;
+   /* n'aplique pas */
+}
+.flesh_main_title{
+   position: absolute;
+   left: 300px;
+   top: 200px;
+}
