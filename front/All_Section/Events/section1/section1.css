@@ -1,75 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 body {
     background-color: #031e47;
-    color: white;
-    font-family: Arial, sans-serif;
+   
 }
+#section_1 {
+    background-color: #031e47;
+  
+   
+  }
+  
+  .item-nav {
+    color: #fff;
 
-.hero {
-    padding: 80px 0;
-}
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: 0.16px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #00a8ff !important;
+  }
+  
+  .contact a {
+    text-decoration: none;
+  }
+  
+  .contact {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .contact img {
+    width: 40%;
+    height: 40%;
+  }
+  
+  .contact h6 {
+    color: var(--Color, #f1f1f1);
+    margin: 0px;
+  
+    /* Caption 1 */
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+  }
+  
+  .contact h5 a{
+    color: var(--White, #fff);
+    margin: 0px;
+  
+    /* Heading 5 */
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 33.6px */
+  }
+  
 
 h1 {
-    color: #40c4ff;
+    color: #2B9CB8;
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 60px;
+    margin-top:20px;
+    margin-bottom: 20px;
+   
+
 }
 
-.image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    max-width: 500PX;
-    width: 100%;
+.image1{
+    
+    width: 888px;;
+    margin-left: 120px;
   
 }
 
-.image-container img {
-    width: 100%;
-    border-radius: 15px;
-    clip-path: polygon(10% 0%, 90% 0%,100% 50%,90% 100%,10% 100%,0% 50%);
-}
 
 .btn-primary {
     background-color: #40c4ff;
     border: none;
+    padding: 12px  13px 13px 12px;
+    border-radius: 15px;
+    margin-top:20px ;
 }
 
-.btn-primary:hover {
-    background-color: #29a3cc;
-}
-#link1{
-    color: white;
-}
-#link2{
-    color: #40c4ff;
-}
-#link3{
-    color: white;
-}
-.h6{
-    font-size: xx-small;
-}
-.h5{
-    color: white;
-    text-decoration: none;
-}
 .h4{
-    font-size: smaller;
-}
-#h1{
-    font-size: 70px;
-    font-weight: bold;
-}
-.p{
-    font-size: smaller;
-}
-#link{
-    font-size: smaller;
-}
-#part{
-   /* position: relative; */
-    text-align: top;
-}
-#img{
-    text-align: left;
+    margin-top: 50px;
 
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #9CB8BF;
+}
+
+.p{
+    font-size:14.5px;
+    font-weight: 400;
+    line-height: 22.5px;
+    font-family: Rubik;
+    color:#FFFFFF ;
 }
