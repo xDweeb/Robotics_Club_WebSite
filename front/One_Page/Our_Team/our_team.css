@@ -319,7 +319,8 @@ form input {
 
 form input::placeholder {
   color: #00a8ff;
-  text-align: center;
+  font-size: 10px;
+  padding: 8px;
 }
 
 footer {
