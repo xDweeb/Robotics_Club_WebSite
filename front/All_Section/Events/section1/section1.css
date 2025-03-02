@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+    background-color: #031e47;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    padding: 80px 0;
+}
+
+h1 {
+    color: #40c4ff;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 500PX;
+    width: 100%;
+  
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 15px;
+    clip-path: polygon(10% 0%, 90% 0%,100% 50%,90% 100%,10% 100%,0% 50%);
+}
+
+.btn-primary {
+    background-color: #40c4ff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #29a3cc;
+}
+#link1{
+    color: white;
+}
+#link2{
+    color: #40c4ff;
+}
+#link3{
+    color: white;
+}
+.h6{
+    font-size: xx-small;
+}
+.h5{
+    color: white;
+    text-decoration: none;
+}
+.h4{
+    font-size: smaller;
+}
+#h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+.p{
+    font-size: smaller;
+}
+#link{
+    font-size: smaller;
+}
+#part{
+   /* position: relative; */
+    text-align: top;
+}
+#img{
+    text-align: left;
+
+}
