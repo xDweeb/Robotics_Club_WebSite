@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+footer form button {
+    background-color: #2b9cb8;
+    color: #f1f1f1;
+    border-radius: 15px;
+    padding: 24px 34px 24px 34px;
+    width: 148px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 50px;
+    border: none;
+  }
+  
+  form input {
+    border: 1px solid #071731;
+    border-radius: 12px;
+    width: 250px;
+    height: 58px;
+  }
+  
+  form input::placeholder {
+    color: #00a8ff;
+    font-size: 10px;
+    padding: 8px;
+  }
+  
+  footer {
+    
+    background: #fff;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+    font-size: 17px;
+  }
+  
+  .footer-links a {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    color: #2b2b2c;
+  }
+  
+  .parag-foot {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #231f20;
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-bottom a {
+    color: #323233;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
