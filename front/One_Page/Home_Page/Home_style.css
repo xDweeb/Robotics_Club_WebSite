@@ -259,7 +259,8 @@ border: 5px solid  #2b9cb8 ;
 #section_3{
   border-top-left-radius: 16px;
   background-color: #0b1c2d;
-position: relative;
+ position: relative;
+
   
 }
 .text3 .round{
@@ -287,14 +288,14 @@ position: relative;
   line-height: 28px;
 
 }
-ul li{
+.list li{
  margin-left: 5px;
  color: #f1f1f1;
   list-style: none;
   font-size: 20px;
   font-weight: 400;
   font-family: Rubik;
-  line-height: 28px;
+  line-height: 46px;
 
 }
 
@@ -427,14 +428,11 @@ p{
   font-weight: bold;
 }
 /* kawtar's footer */
-footer{
-  background-color: #FFFFFF;
 
-}
-footer form button{
-  background-color: #2B9CB8;
+footer form button {
+  background-color: #2b9cb8;
   color: #f1f1f1;
-  border-radius: 15px  ;
+  border-radius: 15px;
   padding: 24px 34px 24px 34px;
   width: 148px;
   padding: 10px;
@@ -442,27 +440,22 @@ footer form button{
   height: 50px;
   border: none;
 }
-form input{
- 
+
+form input {
   border: 1px solid #071731;
   border-radius: 12px;
   width: 250px;
   height: 58px;
 }
-form input::placeholder{
-  color: #00a8ff;
-  text-align: center;
 
+form input::placeholder {
+  color: #00a8ff;
+  font-size: 10px;
+  padding: 8px;
 }
+
 footer {
   background: #fff;
-  padding: 50px 0;
-  border-top: 2px solid #ddd;
-}
-
-.footer-logo img {
-  width: 180px;
-  margin-bottom: 15px;
 }
 
 .footer p {
@@ -488,18 +481,15 @@ footer {
 }
 
 .footer-links a {
-  text-decoration: none;
   color: #333;
   font-weight: 500;
-}
-a{
-  text-decoration: none;
 }
 
 .footer-links a:hover {
   color: #2b2b2c;
 }
-.parag-foot{
+
+.parag-foot {
   font-family: Rubik;
   font-weight: 400;
   font-size: 16px;
@@ -507,15 +497,16 @@ a{
   color: #231f20;
 }
 
-
 .footer-bottom {
-
   font-size: 14px;
   color: #666;
 }
 
 .footer-bottom a {
   color: #323233;
+}
+
+a {
   text-decoration: none;
 }
 
