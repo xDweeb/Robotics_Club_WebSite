@@ -8,16 +8,25 @@ body {
 
 .item-nav {
   color: #fff;
-  /* Navigation */
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%; /* 16px */
+  line-height: 100%;
   letter-spacing: 0.16px;
+  transition: color 0.3s ease;
 }
+
 .navbar-nav .nav-link:hover {
   color: #00a8ff !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #00a8ff !important;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 700;
 }
 
 .contact a {
@@ -161,9 +170,6 @@ body {
   background-color: #ffffff;
 }
 
-              <svg class="mouse-lt" xmlns="http://www.w3.org/2000/svg" width="39" height="46" viewBox="0 0 39 46" fill="none">
-                <path d="M36.1082 41.9589L30.6865 4.79574L21.8885 19.1898L5.0654 20.7906L36.1082 41.9589Z" fill="#2B9CB8" stroke="white" stroke-width="3"/>
-              </svg>
 .three_small_flesh {
   position: relative;
   display: inline-block;

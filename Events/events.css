@@ -1,408 +1,514 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 body {
-    background-color: #071731;
-    
+  background-color: #071731;
 }
 /* Aya */
-#section_1{
-    background-color: #071731;
-    height: 600px;
+#section_1 {
+  background-color: #071731;
+  height: 600px;
 }
 
 .item-nav {
-    color: #fff;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.16px;
+  transition: color 0.3s ease;
+}
 
-    font-family: Rubik;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%; /* 16px */
-    letter-spacing: 0.16px;
-}
 .navbar-nav .nav-link:hover {
-    color: #00a8ff !important;
+  color: #00a8ff !important;
 }
-  
+
+.navbar-nav .nav-link.active {
+  color: #00a8ff !important;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 700;
+}
+
 .contact a {
-    text-decoration: none;
+  text-decoration: none;
 }
-  
+
 .contact {
-    align-items: center;
-    justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-  
+
 .contact img {
-    width: 40%;
-    height: 40%;
+  width: 40%;
+  height: 40%;
 }
-  
+
 .contact h6 {
-    color: var(--Color, #f1f1f1);
-    margin: 0px;
-  
-    /* Caption 1 */
-    font-family: Rubik;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 16.8px */
+  color: var(--Color, #f1f1f1);
+  margin: 0px;
+
+  /* Caption 1 */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
 }
-  
-.contact h5 a{
-    color: var(--White, #fff);
-    margin: 0px;
-  
-    /* Heading 5 */
-    font-family: Rubik;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 33.6px */
+
+.contact h5 a {
+  color: var(--White, #fff);
+  margin: 0px;
+
+  /* Heading 5 */
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 33.6px */
 }
 h1 {
-    color: #2B9CB8;
-    font-family: Rubik;
-    font-weight: 700;
-    font-size: 60px;
-    margin-top:20px;
-    margin-bottom: 20px;
-   
+  color: #2b9cb8;
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.image1 {
+  width: 888px;
+  margin-left: 100px;
+}
 
+.events-animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px 0px;
+  gap: 8px;
+  text-align: center;
 }
-.image1{
-    
-    width: 888px;;
-    margin-left: 100px;
-  
+
+.word {
+  font-family: "Rubik", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeSequence 4s infinite forwards;
 }
+
+.host {
+  color: #2b9cb8;
+}
+.great,
+.events {
+  color: #fff;
+}
+
+.host {
+  animation-delay: 0s, 5s;
+}
+.great {
+  animation-delay: 0.4s, 3.4s;
+}
+.events {
+  animation-delay: 0.8s, 3.8s;
+}
+
+@keyframes fadeSequence {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  12% {
+    transform: translateY(0) scale(1.08);
+  }
+  15% {
+    transform: translateY(0) scale(1);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  95% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.host::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #2b9cb8;
+  margin: 4px auto 0;
+  opacity: 0;
+  animation: barSeq 4s infinite;
+}
+
+@keyframes barSeq {
+  0%,
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+  10% {
+    width: 60px;
+    opacity: 1;
+  }
+  15% {
+    width: 60px;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
 .btn-primary {
-    background-color: #40c4ff;
-    border: none;
-    padding: 12px  13px 13px 12px;
-    border-radius: 15px;
-    margin-top:20px ;
+  background-color: #40c4ff;
+  border: none;
+  padding: 12px 13px 13px 12px;
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
-.h4{
-    margin-top: 50px;
+.h4 {
+  margin-top: 50px;
 
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    color: #9CB8BF;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #9cb8bf;
 }
-.p{
-    font-size:14.5px;
-    font-weight: 400;
-    line-height: 22.5px;
-    font-family: Rubik;
-    color:#FFFFFF ;
+.p {
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 22.5px;
+  font-family: Rubik;
+  color: #ffffff;
 }
 /* siham */
-#siham_2{
-    background-color: #FFFFFF;
-    border-top-right-radius: 90px;
-    
-    
+#siham_2 {
+  background-color: #ffffff;
+  border-top-right-radius: 90px;
 }
-.behind2{
-    background-color: #FFFFFF;
-    border-top-right-radius: 90px;
-    height: 100vh;
+.behind2 {
+  background-color: #ffffff;
+  border-top-right-radius: 90px;
+  height: 100vh;
 }
 .custom-container {
-    position: relative;
-    padding: 20px;
+  position: relative;
+  padding: 20px;
 }
-.big_title{
-    font-family: Rubik;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 53px;
-    color: #000000;
+.big_title {
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #000000;
 }
-h6{
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 20px;
-    color:#9CB8BF;
-    line-height: 20px;
-
+h6 {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 20px;
+  color: #9cb8bf;
+  line-height: 20px;
 }
-.our_events{
-    text-decoration: none;
-    color: #000000;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    font-family: Rubik;
+.our_events {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  font-family: Rubik;
 }
 .decor {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: #0d6efd;
-    border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #0d6efd;
+  border-radius: 50%;
 }
 
 .decor.top-left {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 
 .decor.bottom-right {
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
 }
 .content_gauche {
-    margin-top: 200px;
-top: 274px;
-left: 182px;
-gap: 30px;
-height: 346px;
-width: 616px;
+  margin-top: 200px;
+  top: 274px;
+  left: 182px;
+  gap: 30px;
+  height: 346px;
+  width: 616px;
 }
-.content_gauche p{
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    color:#000000 ;
+.content_gauche p {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
 }
-.im1{
-    width: 400px;
-    height: 310px;
-    position: relative;
-    top: 100px;
+.im1 {
+  width: 400px;
+  height: 310px;
+  position: relative;
+  top: 100px;
 }
-.im2{
-    width: 390px ;
-    height: 200px;
+.im2 {
+  width: 390px;
+  height: 200px;
 }
-.im3{
-    width: 250px;
-    height: 250px;
+.im3 {
+  width: 250px;
+  height: 250px;
 }
-.content_droit{
-    top: 59px;
-    left: 898px;
-    margin-top: 70px;
+.content_droit {
+  top: 59px;
+  left: 898px;
+  margin-top: 70px;
 }
 .pattern {
-    position: absolute;
-    bottom: -100px;
-    right: -2px;
-    width: 150px;
-    height: 100px;
-    opacity: 0.8;
-    background-image: url("/front/All_Section/Events/section2/assets/Patter.svg");
-    background-size: cover;
+  position: absolute;
+  bottom: -100px;
+  right: -2px;
+  width: 150px;
+  height: 100px;
+  opacity: 0.8;
+  background-image: url("/front/All_Section/Events/section2/assets/Patter.svg");
+  background-size: cover;
 }
 /* kawtar */
 .S3 {
-    width: 100%;
-    height: 100vh;
-    background-color: #071731;
-    background-image: url("./assets/Section\ 3.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .title-h2 {
-    color: #fff;
-    text-align: center;
-    font-family: "Game Of Squids";
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-  }
-  
-  .title-h1 {
-    color: #fff;
-    text-align: center;
-    font-family: "Game Of Squids";
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-  }
-  
-  .subtitle {
-    color: #fff;
-    text-align: center;
-    font-family: "Game Of Squids";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 100;
-    line-height: normal;
-  }
-  
-  .box {
-    width: 100%;
-    height: 40vh;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #007bff, #00d4ff);
-    opacity: 0.8;
-  }
-  
-  .team2 .box {
-    background: linear-gradient(135deg, #e4407d, #ff4d94);
-  }
-  
-  .team-name1,.team-name2 {
-    color: #fff;
-    text-align: center;
-    font-family: "Game Of Squids";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-radius: 10px;
-  }
-  
-  .team-name1 {
-    background-color: #00d4ff;
-  }
-  
-  .team-name2 {
-    background-color: #e4407d;
-  }
-  
-  .mouse-lt,.mouse-rt,.mouse-bl,.mouse-br {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 5vh;
-    margin: 0;
-  }
-  
-  .mouse-lt {
-    background-image: url("./assets/MouseLT.svg");
-  }
-  
-  .mouse-rt {
-    background-image: url("./assets/MouseRT.svg");
-  }
-  
-  .mouse-bl {
-    background-image: url("./assets/MouseBL.svg");
-  }
-  
-  .mouse-br {
-    background-image: url("./assets/MouseBR.svg");
-  }
-  
-  .img1{
-    position: relative;
-    width: 100%;
-    height: 100%; 
-    background-image: url(assets/Pic11.png);
-    background-size: cover;
-    z-index: -1;
-  }
-  
-  .img2{
-    position: relative;
-    width: 100%;
-    height: 100%; 
-    background-image: url(assets/Pic22.png);
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-  }
-  
+  width: 100%;
+  height: 100vh;
+  background-color: #071731;
+  background-image: url("./assets/Section\ 3.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title-h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Game Of Squids";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Game Of Squids";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Game Of Squids";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.box {
+  width: 100%;
+  height: 40vh;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  opacity: 0.8;
+}
+
+.team2 .box {
+  background: linear-gradient(135deg, #e4407d, #ff4d94);
+}
+
+.team-name1,
+.team-name2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Game Of Squids";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+}
+
+.team-name1 {
+  background-color: #00d4ff;
+}
+
+.team-name2 {
+  background-color: #e4407d;
+}
+
+.mouse-lt,
+.mouse-rt,
+.mouse-bl,
+.mouse-br {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 5vh;
+  margin: 0;
+}
+
+.mouse-lt {
+  background-image: url("./assets/MouseLT.svg");
+}
+
+.mouse-rt {
+  background-image: url("./assets/MouseRT.svg");
+}
+
+.mouse-bl {
+  background-image: url("./assets/MouseBL.svg");
+}
+
+.mouse-br {
+  background-image: url("./assets/MouseBR.svg");
+}
+
+.img1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/Pic11.png);
+  background-size: cover;
+  z-index: -1;
+}
+
+.img2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/Pic22.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 
 /* footer */
 footer form button {
-    background-color: #2b9cb8;
-    color: #f1f1f1;
-    border-radius: 15px;
-    padding: 24px 34px 24px 34px;
-    width: 148px;
-    padding: 10px;
-    margin-top: 10px;
-    height: 50px;
-    border: none;
+  background-color: #2b9cb8;
+  color: #f1f1f1;
+  border-radius: 15px;
+  padding: 24px 34px 24px 34px;
+  width: 148px;
+  padding: 10px;
+  margin-top: 10px;
+  height: 50px;
+  border: none;
 }
-  
+
 form input {
-    border: 1px solid #071731;
-    border-radius: 12px;
-    width: 250px;
-    height: 58px;
+  border: 1px solid #071731;
+  border-radius: 12px;
+  width: 250px;
+  height: 58px;
 }
-  
+
 form input::placeholder {
-    color: #00a8ff;
-    font-size: 10px;
-    padding: 8px;
+  color: #00a8ff;
+  font-size: 10px;
+  padding: 8px;
 }
-  
+
 footer {
-    margin-top: 30px;
-    background: #fff;
+  margin-top: 30px;
+  background: #fff;
 }
-  
+
 .footer p {
-    font-size: 14px;
-    color: #555;
+  font-size: 14px;
+  color: #555;
 }
-  
+
 .footer h5 {
-    font-weight: bold;
-    font-size: 16px;
-    color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
 }
-  
+
 .footer-links {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
-  
+
 .footer-links li {
-    margin-bottom: 8px;
-    font-family: Arial, Helvetica, sans-serif, Times, serif;
-    font-size: 17px;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif, Times, serif;
+  font-size: 17px;
 }
-  
+
 .footer-links a {
-    color: #333;
-    font-weight: 500;
+  color: #333;
+  font-weight: 500;
 }
-  
+
 .footer-links a:hover {
-    color: #2b2b2c;
+  color: #2b2b2c;
 }
-  
+
 .parag-foot {
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25.6px;
-    color: #231f20;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #231f20;
 }
-  
+
 .footer-bottom {
-    font-size: 14px;
-    color: #666;
+  font-size: 14px;
+  color: #666;
 }
-  
+
 .footer-bottom a {
-    color: #323233;
+  color: #323233;
 }
-  
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-  
+
 .footer-bottom a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-  
