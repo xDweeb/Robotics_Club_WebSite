@@ -175,55 +175,48 @@ body {
 .S2 {
   position: relative;
   height: 100vh;
+  overflow: hidden;
   /* transform: rotate(180deg); */
 }
 
 .container-s2 {
   position: absolute;
   bottom: 0;
+  left: 50%;
 }
 
 .this {
   position: absolute;
-  bottom: 100%;
+  top: -85%;
   left: 0;
   width: 100%;
   transform: translateY(30%);
   padding: 20px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .image_principale {
   z-index: -1;
   pointer-events: none;
-  transform: translateX(-50%);
-  gap: -300px;
-  animation: rotateBackAndForth 6s ease-in-out infinite;
   transform-origin: bottom center;
   width: auto;
+  transition: transform 1s ease-in-out;
 }
 
 .personallity-img {
   display: block;
   height: auto;
-  width: 60%;
+  width: 55%;
+  transition: all 0.5s ease;
 }
 
-@keyframes rotateBackAndForth {
-  0% {
-    transform: rotate(0deg);
-  }
-  33.3% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  83.3% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+.bg-img {
+  display: block;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: 60%;
 }
 
 .corner-bottom-right-S2 {
@@ -327,6 +320,19 @@ body {
 .contact-icons:hover path {
   fill: #2b9cb8;
   transition: fill 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title_name {
+    font-size: 2.5rem;
+  }
+  .p_hello {
+    font-size: 1.5rem;
+  }
+  .personallity-img {
+    width: 80%;
+  }
 }
 
 /* section 3*/

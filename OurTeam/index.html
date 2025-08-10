@@ -73,8 +73,9 @@
     </div>
   </section>
   <section class="S2 d-flex align-items-center justify-content-center">
+      <img class="bg-img" src="./assets/backgroundBureau.png" alt="Profile Image" />
     <div class="container container-s2 pt-5">
-      <div class="row d-flex align-items-center justify-content-center image_principale"> <!-- image_principale -->
+      <div class="row d-flex align-items-center justify-content-center image_principale">
         <div class="d-flex align-items-center justify-content-center flex-column this">
           <div class="col-md-12 three_small_flesh d-flex align-items-center justify-content-center">
             <p class="p_hello">Hello !</p>
@@ -82,13 +83,13 @@
 
           <div class="col-lg-11 col-xl-8 col-md-11 align-items-center justify-content-center">
             <h1 class="title_name">
-              I'm <span class="color_name">Yaser</span>,
+              I'm <span class="color_name" id="userName">Yaser</span>,
             </h1>
-            <h1 class="title_name">Vice President</h1>
+            <h1 class="title_name" id="userTitle">Vice President</h1>
             <div class="three_large_flesh"></div>
           </div>
         </div>
-        <img class="personallity-img" src="./assets/Frame 57.png" alt="Profile Image" />
+        <img class="personallity-img" id="userImage" src="./assets/bureau/YaserYjjou.png" alt="Profile Image" />
       </div>
     </div>
 
@@ -96,7 +97,7 @@
       <div class="row d-flex align-items-center justify-content-center">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-md-7 col-lg-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="white">
               <path
                 d="M12.135 17.445H5.1C5.22 10.44 6.6 9.28496 10.905 6.73496C11.4 6.43496 11.565 5.80496 11.265 5.29496C10.98 4.79996 10.335 4.63496 9.84 4.93496C4.77 7.93496 3 9.76496 3 18.48V26.565C3 29.13 5.085 31.2 7.635 31.2H12.135C14.775 31.2 16.77 29.205 16.77 26.565V22.065C16.77 19.44 14.775 17.445 12.135 17.445Z"
                 fill="#344054" />
@@ -104,10 +105,10 @@
                 d="M28.365 17.445H21.33C21.45 10.44 22.83 9.28496 27.135 6.73496C27.63 6.43496 27.795 5.80496 27.495 5.29496C27.195 4.79996 26.565 4.63496 26.055 4.93496C20.985 7.93496 19.215 9.76496 19.215 18.495V26.58C19.215 29.145 21.3 31.215 23.85 31.215H28.35C30.99 31.215 32.985 29.22 32.985 26.58V22.08C33 19.44 31.005 17.445 28.365 17.445Z"
                 fill="#344054" />
             </svg>
-            <p class="parag">
-              Yaser Yjjou, Vice Presidet and Founder of <br />
-              the Robotics Club CMC Rabat,passionate <br />
-              about innovation,technology,and <br />
+            <p class="parag" id="userDescription">
+              Yaser Yjjou, Vice President and Founder of<br />
+              the Robotics Club CMC Rabat, passionate<br />
+              about innovation, technology, and<br />
               advancing robotics within the community.
             </p>
           </div>
@@ -135,12 +136,13 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-2">
-        <p class="position_number">01</p>
+        <p class="position_number" id="userNumber">01</p>
       </div>
     </div>
-    </div>
+
     <div class="corner-top-left-S2">
       <img src="./assets/corner-top-left-S2.svg" alt="corner-top-left-S2" />
     </div>
