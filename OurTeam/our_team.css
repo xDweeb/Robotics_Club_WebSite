@@ -82,61 +82,148 @@ body {
 
 .meduim_title {
   color: #9cb8bf;
-  text-align: center;
-
-  /* Sub Heading */
   font-family: Rubik;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 20px */
+  line-height: 100%;
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .main_title {
   color: #2b9cb8;
-  text-align: center;
   font-family: Rubik;
   font-size: 96px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 115.2px */
+  line-height: 120%;
+  opacity: 0;
+  transform: translateY(-30px);
 }
 
 .desc {
   color: #fff;
-  text-align: center;
-
-  /* Body 1 */
   font-family: Rubik;
   font-size: 20px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 160%; /* 32px */
+  line-height: 160%;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .buttons {
-  color: var(--White, #fff);
-  border-radius: 15px;
+  color: #fff;
   background: #2b9cb8;
+  border-radius: 15px;
   text-decoration: none;
-  display: inline-flex;
-  padding: 24px 34px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
+  padding: 16px 32px;
   font-family: Rubik;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 100%;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.buttons:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(43, 156, 184, 0.3);
+}
+
+.buttons i {
+  transition: transform 0.3s ease;
+}
+
+.buttons:hover i {
+  transform: translateX(5px);
+}
+
+.animate {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+[style*="--delay"] {
+  animation-delay: var(--delay);
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main_title {
+  animation: slideUp 0.8s ease-out 0.6s forwards,
+    pulseGlow 4s ease-in-out infinite 4s;
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(43, 156, 184, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(43, 156, 184, 0.6),
+      0 0 30px rgba(43, 156, 184, 0.3);
+  }
 }
 
 /* Section 2 */
 .S2 {
   position: relative;
-  height: 110vh;
+  height: 100vh;
+  /* transform: rotate(180deg); */
+}
+
+.container-s2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.this {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(30%);
+  padding: 20px;
+}
+
+.image_principale {
+  z-index: -1;
+  pointer-events: none;
+  transform: translateX(-50%);
+  gap: -300px;
+  animation: rotateBackAndForth 6s ease-in-out infinite;
+  transform-origin: bottom center;
+  width: auto;
+}
+
+.personallity-img {
+  display: block;
+  height: auto;
+  width: 60%;
+}
+
+@keyframes rotateBackAndForth {
+  0% {
+    transform: rotate(0deg);
+  }
+  33.3% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  83.3% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .corner-bottom-right-S2 {
@@ -155,12 +242,6 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.image_principale {
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
 }
 
 .p_hello {
@@ -197,8 +278,11 @@ body {
   letter-spacing: -1.433px;
   margin-bottom: 10px;
 }
+
 .three_large_flesh {
-  position: relative;
+  position: absolute;
+  top: 30%;
+  transform: rotateZ(80deg);
   display: grid;
 }
 
@@ -247,9 +331,60 @@ body {
 
 /* section 3*/
 .S3 {
-  background-color: #071731;
+  position: relative;
   height: 100vh;
+  overflow: hidden;
+  background-color: #071731; /* أو اللون اللي عندك */
 }
+
+/* النقطة المحورية: bottom center of S3 */
+.rotation-pivot {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%); /* يمركز النقطة */
+  width: 0;
+  height: 0;
+  z-index: 0;
+  pointer-events: none; /* ماشي يتدخل مع التفاعلات */
+}
+
+/* الـ wrapper اللي غادي يدور حول النقطة */
+.image-wrapper {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  transform-origin: 0 0; /* ⭐ يدور حول نقطة الأصل (وهيا bottom center of S3) */
+  animation: rotateAroundCenter 6s ease-in-out infinite;
+}
+
+.image-wrapper img {
+  width: 200px; /* حجم الصورة */
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* التأثير: دوران حول مركز أسفل S3 */
+@keyframes rotateAroundCenter {
+  0% {
+    transform: rotate(0deg);
+  }
+  33.3% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  83.3% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /* section4 */
 .S4 {
   background-color: #071731;
