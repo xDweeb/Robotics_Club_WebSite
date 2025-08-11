@@ -6,6 +6,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p{
+  margin: 0;
+}
+
 .item-nav {
   color: #fff;
   font-family: Rubik;
@@ -251,7 +255,11 @@ body {
 }
 
 @keyframes bounce-hello {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   10% {
@@ -284,7 +292,8 @@ body {
 }
 
 @keyframes zoom-pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -398,6 +407,156 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: #071731;
+}
+
+.div1_sec3_our_team {
+  width: 367px;
+  height: 82px;
+  border-radius: 50px;
+  border: solid 2px #c9c9c9;
+  padding: 25px;
+  color: #ffffff;
+}
+
+.span1_div1_sec3_our_team {
+  border: 0.5px solid #d0d5dd;
+  border-radius: 60px;
+  padding: 15px;
+  background-color: #2b9cb8;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 10px;
+}
+
+.h6_row2_our_team {
+  color: #2b9cb8;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 20px;
+}
+
+.h1_row2_our_team {
+  color: #f1f1f1;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 78.4px;
+  margin: 20px;
+}
+
+.team-member-row {
+  width: 850px;
+  height: 98px;
+  padding: 20px;
+  margin-bottom: 2px;
+}
+
+.team-member-row:nth-child(odd) {
+  background-color: #2b9cb8;
+}
+
+.team-member-row:nth-child(even) {
+  background-color: #0a1e3e;
+}
+
+.team-member-row:first-child {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.team-member-row:last-child {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.parent_sec3_our_team {
+  color: #ffffff;
+  box-shadow: 0px 10px 50px 6px #ffffff;
+  margin: auto;
+  width: 850px;
+  max-height: 600px;
+  overflow-y: auto;
+  border-radius: 20px;
+}
+
+.parent_sec3_our_team::-webkit-scrollbar {
+  width: 8px;
+}
+
+.parent_sec3_our_team::-webkit-scrollbar-track {
+  background: #071731;
+  border-radius: 10px;
+}
+
+.parent_sec3_our_team::-webkit-scrollbar-thumb {
+  background: #2b9cb8;
+  border-radius: 10px;
+}
+
+.parent_sec3_our_team::-webkit-scrollbar-thumb:hover {
+  background: #247a92;
+}
+
+.Member_since {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23.7px;
+}
+
+.member-number {
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0;
+}
+
+.member-name {
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.member-joined {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 70%;
+  margin: 5px 0 0 0;
+}
+
+.member-since {
+  font-family: Rubik;
+  font-weight: 600;
+  opacity: 50%;
+  font-size: 13px;
+}
+
+.member-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+._row3_our_team {
+  color: #ffffff;
+}
+
+.loading {
+  text-align: center;
+  color: #2b9cb8;
+  font-family: Rubik;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.images_DISCOVER_OUR_STAFF {
+  position: absolute;
+  right: 1%;
+  top: 100%;
+  z-index: 1000;
 }
 
 /* section4 */

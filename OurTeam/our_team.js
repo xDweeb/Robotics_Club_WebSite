@@ -62,10 +62,10 @@ const CONFIG = {
   transitionDuration: 1000,
   contentUpdateDelay: 500,
   autoChangeInterval: 10000,
-  descriptionAnimationDuration: 400, 
+  descriptionAnimationDuration: 400,
   typingSpeedBase: 80,
-  typingSpeedVariation: 40, 
-  nameTypingDelay: 1500, 
+  typingSpeedVariation: 40,
+  nameTypingDelay: 1500,
 };
 
 class UserCarousel {
@@ -236,3 +236,78 @@ class UserCarousel {
 }
 
 const carousel = new UserCarousel(USERS, SELECTORS, CONFIG);
+
+/* Section 3 */
+function formatMemberNumber(num) {
+  return num.toString().padStart(2, "0");
+}
+
+// Function to calculate years since joining
+function calculateMemberSince(joinedYear) {
+  const currentYear = new Date().getFullYear();
+  const joinYear = parseInt(joinedYear.split("/")[0]);
+  const yearsSince = currentYear - joinYear;
+  return yearsSince >= 0 ? yearsSince : 0;
+}
+
+function renderTeamMembers(members) {
+  const container = document.getElementById("teamContainer");
+  const loading = document.getElementById("loading");
+
+  loading.style.display = "none";
+
+  container.innerHTML = "";
+
+  members.forEach((member, index) => {
+    const memberRow = document.createElement("div");
+    memberRow.className =
+      "row team-member-row d-flex align-items-center justify-content-center";
+
+    // Calculate automatic memberSince based on joinedYear
+    const memberSinceYears = calculateMemberSince(member.joinedYear);
+
+    memberRow.innerHTML = `
+                    <div class="col-md-1 d-flex align-items-center justify-content-center">
+                        <p class="member-number">${formatMemberNumber(
+                          member.id
+                        )}</p>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                        <img src="${member.image}" alt="${
+      member.name
+    }" class="member-image">
+                    </div>
+                    <div class="col-md-4 d-flex align-items-start justify-content-center flex-column">
+                        <h3 class="member-name">${member.name}</h3>
+                        <p class="member-joined">Joined us in <span class="_row3_our_team">:${
+                          member.joinedYear
+                        }</span></p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3 d-flex align-items-center justify-content-center ">
+                        <p class="member-since"><span class="Member_since">Member since </span>${memberSinceYears} years</p>
+                    </div>
+                `;
+
+    container.appendChild(memberRow);
+  });
+}
+
+async function loadTeamFromJSON() {
+  try {
+    const response = await fetch("./team_data_json.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    renderTeamMembers(data.members);
+  } catch (error) {
+    console.error("Error loading team data:", error);
+    document.getElementById("loading").innerHTML =
+      "Error loading team data. Please check if team-data.json exists.";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  loadTeamFromJSON();
+});
