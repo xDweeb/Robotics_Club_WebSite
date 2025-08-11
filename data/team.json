@@ -3,79 +3,79 @@
     {
       "id": 1,
       "name": "YASSER YJJOU",
-      "image": "./assets/image 57 yasser.svg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2023/2024"
     },
     {
       "id": 2,
       "name": "AHMED BENALI",
-      "image": "./assets/image 57 yasser.svg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2022/2023"
     },
     {
       "id": 3,
       "name": "FATIMA ZAHRA",
-      "image": "./assets/image 57 yasser.svg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2021/2022"
     },
     {
       "id": 4,
       "name": "OMAR KADIRI",
-      "image": "./assets/image 57 yasser.svg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2020/2021"
     },
     {
       "id": 5,
       "name": "SARA ALAMI",
-      "image": "./assets/image 57 yasser.svg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2024/2025"
     },
     {
       "id": 6,
       "name": "HASSAN TAZI",
-      "image": "./assets/image 57 yasser.svg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2019/2020"
     },
     {
       "id": 7,
       "name": "AICHA BENNANI",
-      "image": "./assets/aicha-bennani.jpg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2018/2019"
     },
     {
       "id": 8,
       "name": "KARIM FASSI",
-      "image": "./assets/karim-fassi.jpg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2017/2018"
     },
     {
       "id": 9,
       "name": "NADIA CHRAIBI",
-      "image": "./assets/nadia-chraibi.jpg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2023/2024"
     },
     {
       "id": 10,
       "name": "RACHID IDRISSI",
-      "image": "./assets/rachid-idrissi.jpg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2022/2023"
     },
     {
       "id": 11,
       "name": "LAILA MANSOURI",
-      "image": "./assets/laila-mansouri.jpg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2021/2022"
     },
     {
       "id": 12,
       "name": "MOHAMED BERRADA",
-      "image": "./assets/mohamed-berrada.jpg",
+      "image": "./assets/images/team/image 57 yasser.svg",
       "joinedYear": "2020/2021"
     },
     {
       "id": 13,
       "name": "Club Robotique CmC Rabat",
-      "image": "./assets/Logo_Club.png",
+      "image": "./assets/images/team/Logo_Club.png",
       "joinedYear": "2023/2024"
     }
   ]

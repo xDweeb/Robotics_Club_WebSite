@@ -78,7 +78,7 @@ p{
       rgba(7, 23, 49, 0.7) 0%,
       rgba(7, 23, 49, 0.7) 100%
     ),
-    url(./assets/Section_1_Our_Team.png) lightgray 0.775px -100px / 100% 119.729%
+    url("../images/team/Section_1_Our_Team.png") lightgray 0.775px -100px / 100% 119.729%
       no-repeat;
   height: 100vh;
   border-radius: 0 0 100px 0;

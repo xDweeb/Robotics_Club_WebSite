@@ -299,7 +299,7 @@ body {
   width: 150px;
   height: 100px;
   opacity: 0.8;
-  background-image: url("/front/One_Page/Home_Page/assets/Patter.svg");
+  background-image: url("../images/home/Patter.svg");
   background-size: cover;
 }
 /* Hamza */
@@ -411,7 +411,7 @@ p {
   height: 100vh; */
 
 .video-container {
-  background-image: url("/front/One_Page/Home_Page/assets/BANNIERE CMC RABAT 1.png");
+  background-image: url("../images/home/BANNIERE CMC RABAT 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

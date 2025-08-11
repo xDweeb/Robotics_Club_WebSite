@@ -6,7 +6,7 @@ const USERS = [
     title: "Vice President",
     description:
       "Yaser Yjjou, Vice President and Founder of<br />the Robotics Club CMC Rabat, passionate<br />about innovation, technology, and<br />advancing robotics within the community.",
-    image: "./assets/bureau/YaserYjjou-2.png",
+    image: "./assets/images/team/YaserYjjou-2.png",
     number: "01",
   },
   {
@@ -15,7 +15,7 @@ const USERS = [
     title: "Tech Lead",
     description:
       "Sarah Chen, Technology Lead and AI Specialist<br />at Innovation Hub, dedicated to pushing<br />the boundaries of machine learning and<br />creating intelligent solutions for tomorrow.",
-    image: "./assets/bureau/user1.png",
+    image: "./assets/images/team/user1.png",
     number: "02",
   },
   {
@@ -24,7 +24,7 @@ const USERS = [
     title: "Project Manager",
     description:
       "Ahmed Alaoui, Senior Project Manager<br />specializing in agile development and<br />team coordination, bringing innovative<br />projects from concept to reality.",
-    image: "./assets/bureau/user3.png",
+    image: "./assets/images/team/user3.png",
     number: "03",
   },
   {
@@ -33,7 +33,7 @@ const USERS = [
     title: "UX Designer",
     description:
       "Fatima Zahra, Creative UX Designer with<br />expertise in user-centered design and<br />digital experiences, crafting intuitive<br />interfaces that users love.",
-    image: "./assets/bureau/user2.png",
+    image: "./assets/images/team/user2.png",
     number: "04",
   },
   {
@@ -42,7 +42,7 @@ const USERS = [
     title: "Web Developer",
     description:
       "Omar Bennani, Full Stack Developer<br />passionate about creating scalable web<br />applications and exploring cutting-edge<br />technologies in the development space.",
-    image: "./assets/bureau/user4.png",
+    image: "./assets/images/team/user4.png",
     number: "05",
   },
 ];
@@ -295,7 +295,7 @@ function renderTeamMembers(members) {
 
 async function loadTeamFromJSON() {
   try {
-    const response = await fetch("./team_data_json.json");
+    const response = await fetch("./data/team.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -304,7 +304,7 @@ async function loadTeamFromJSON() {
   } catch (error) {
     console.error("Error loading team data:", error);
     document.getElementById("loading").innerHTML =
-      "Error loading team data. Please check if team-data.json exists.";
+      "Error loading team data. Please check if data/team.json exists.";
   }
 }
 
